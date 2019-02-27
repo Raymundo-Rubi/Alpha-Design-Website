@@ -1,0 +1,492 @@
+/*-------------------------------------------------------------------------
+GLOBAL CSS
+-------------------------------------------------------------------------*/
+
+body {
+	font-family: 'Lato', sans-serif; 
+	font-size: 10px;
+	color: #2F2E2E;
+}
+
+.regText {
+	padding: 0 5.5vw;
+	line-height: 25px;
+	font-size: 16.5px;
+	text-align: center;
+}
+
+h2 {
+	margin-bottom: 2vh;
+	font-weight: 700;
+}
+
+.redBarSmall {
+	margin: 0 auto 8vh;
+	height: 5px;
+	width: 170px;
+	background-color: #F20A10;
+}
+
+/*-------------------------------------------------------------------------
+HEADER: Menu, Logo, Sidebar, Full Screen Nav
+-------------------------------------------------------------------------*/
+
+header {
+	position: fixed;
+	z-index: 2;
+}
+
+#topStuff {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+#topStuff li {
+	display: inline-block;
+	margin-top: 15px;
+}
+
+#menu {
+	margin: 20px 0 0 12px;
+	width: 55px;
+	height: 55px;
+	border: 4px solid #ffffff;
+	border-radius: 50%;
+	color: #ffffff;
+	font-size: 13px;
+	font-weight: 700;
+	text-align: center;
+	padding-top: 12px;
+	-webkit-transition: background-color 150ms linear;
+    -moz-transition: background-color 150ms linear;
+    -o-transition: background-color 150ms linear;
+    -ms-transition: background-color 150ms linear;
+    transition: background-color 150ms linear;
+}
+
+#menu:hover {
+	background-color: #ffffff;
+	color: #4FBFA5;
+	cursor: pointer;
+}
+
+#logo {
+	width: 200px;
+	margin-left: 35px;
+}
+
+#logo2 {
+	position: absolute;
+	margin-top: 25px;
+	width: 125px;
+	right: 12.5px;
+	opacity: 0;
+}
+
+#sideBar {
+	position: fixed;
+	z-index: 1;
+	height: 100vh;
+	width: 80px;
+	background-color: #4FBFA5;
+}
+
+/*---- NAV ----*/
+aside {
+	position: fixed;
+	width: 50vw;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	background-color: #4FBFA5;
+	transition: all .5s ease;
+	z-index: 3;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.open {
+	opacity: 1;
+	visibility: visible;
+}
+
+.close {
+	height: 100px;
+	width: 100px;
+  	position: fixed;
+  	top: 40px;
+  	left: 50px;
+  	z-index: 1;
+  	cursor: pointer;
+}
+.close:hover {
+	opacity: 1;
+}
+
+nav {
+	text-align: center;
+	height: 95vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+a {
+	margin-top: 20px;
+	transition: all 0.5s ease;
+	display: block;
+	text-decoration: none;
+	color: #ffffff;
+}
+
+nav ul li a:hover {
+	color: #2F2E2E;
+	transform: scale(1.035);
+	text-decoration: none;
+}
+
+nav ul li a {
+	font-size: 400%;
+	font-weight: 700;
+}
+/*---- END NAV ----*/
+
+/*-------------------------------------------------------------------------
+WHO WE ARE
+-------------------------------------------------------------------------*/
+
+#who {
+	padding: 17vh 15vw 10vh 15vw;
+	background-color: #f2f2f2;
+}
+
+#pitch {
+	position: relative;
+	left: -2vw;
+	bottom: -4vh;
+	margin-right: 2vw;
+	line-height: 45px;
+	font-size: 26px;
+	font-weight: 700;
+}
+
+#pitchBox {
+	margin-left: 2vw;
+	margin-right: 30vw;	
+	background-color: #ffffff;
+}
+
+.redBarLarge {
+	margin: 8vh auto 5vh 3.5vw;
+	height: 5px;
+	width: 40vw;
+	background-color: #F20A10;
+}
+
+#whiteSmallBox {
+	background-color: transparent;
+}
+
+.funFacts {
+	text-align: center;
+}
+
+.littleNumbers {
+	font-size: 35px;
+	font-weight: 700;
+}
+
+/*-------------------------------------------------------------------------
+WHAT WE DO
+-------------------------------------------------------------------------*/
+
+#what {
+	padding: 10vh 15vw;
+	background-color: #2F2E2E;
+	text-align: center;
+}
+
+#what h2, #what .regText {
+	color: #ffffff;
+}
+
+#services {
+	margin-top: 7vh;
+}
+
+.service {
+	margin: 3vh 0;
+}
+
+.serviceIcon {
+	display: block;
+	margin: 0 auto;
+	width: 40%;
+}
+
+.boldText {
+	color: #FFFFFF;
+	font-size: 18px;
+	font-weight: 900;
+}
+
+/*-------------------------------------------------------------------------
+OUR PRINCIPLES
+-------------------------------------------------------------------------*/
+
+#ourPrinciples {
+	padding: 10vh 15vw;
+	background-color: #ffffff;
+	text-align: center;
+}
+
+.principleNum {
+	display: block;
+	margin: 0 auto;
+	width: 70%;
+	background-color: #F20A10;
+}
+
+.principle p {
+	margin-top: 5vh;
+}
+
+/*-------------------------------------------------------------------------
+OUR WORK
+-------------------------------------------------------------------------*/
+
+#ourWork {
+	padding: 10vh 15vw;
+	background-color: #f2f2f2;
+	text-align: center;
+}
+
+/*-------------------------------------------------------------------------
+TALK TO US
+-------------------------------------------------------------------------*/
+
+#talk {
+	padding: 10vh 15vw;
+	background-color: #ffffff;
+	text-align: center;
+}
+
+.box {
+	width: 70vw;
+}
+
+.box input[type = "text"], .box textarea {
+	background-color: #f2f2f2;
+	display: block;
+	margin: 20px auto;
+	text-align: center;
+	border: 2px solid #2F2E2E;
+	border-radius: 24px;
+	padding: 1.5vh 5vw;
+	width: 40vw;
+	outline: none;
+	transition: 0.25s;
+	font-size: 125%;
+}
+
+.box input[type = "text"]:focus, .box textarea:focus {
+	width: 45vw;
+	border-color: #4FBFA5;
+}
+
+.box input[type = "submit"] {
+	background: none;
+	display: block;
+	margin: 20px auto;
+	text-align: center;
+	border: 2px solid #4FBFA5;
+	border-radius: 24px;
+	padding: 1.5vh 5vw;
+	width: 40vw;
+	outline: none;
+	transition: 0.25s;
+}
+
+.box input[type = "submit"]:hover {
+	background-color: #4FBFA5;
+	color: #ffffff;
+}
+
+/*---------------------------------------------
+If the screen size is 789px wide or less, 
+set the element classes to the following CSS 
+---------------------------------------------*/
+
+@media screen and (max-width: 768px) {
+
+/*-------------------------------------------------------------------------
+GLOBAL CSS
+-------------------------------------------------------------------------*/
+
+	span {
+		display: none;
+	}
+
+	.redBarSmall {
+		margin-bottom: 30px;
+	}
+
+/*-------------------------------------------------------------------------
+HEADER: Menu, Logo, Sidebar, Full Screen Nav
+-------------------------------------------------------------------------*/
+
+	#sideBar {
+		background-color: transparent;
+	}
+
+	#menu {
+		border-color: #4FBFA5;
+		color: #4FBFA5;
+	}
+
+	#menu:hover {
+		background-color: #4FBFA5;
+		color: #ffffff;
+		cursor: pointer;
+	}
+
+	#topStuff li {
+		margin-top: 0;
+	}
+
+	#logo {
+		opacity: 0;
+	}
+
+	#logo2 {
+		opacity: 100;
+	}
+
+	aside {
+  		height: 200px;
+  		width: 100vw;
+  	}
+
+  	nav ul li a {
+		font-size: 200%;
+	}
+
+	a {
+		margin-top: 10px;
+	}
+
+	nav {
+		height: 190px;
+	}
+
+/*-------------------------------------------------------------------------
+WHO WE ARE
+-------------------------------------------------------------------------*/
+
+	#who {
+		padding: 60px 3vw 20px;
+	}
+
+	#pitch {
+		left: 4vw;
+		margin-right: 0vw;
+		font-size: 200%;
+		line-height: 40px;
+	}
+
+	#pitchBox {
+		background-color: transparent;
+		margin-right: 6vw;
+	}
+
+	.redBarLarge {
+		margin-top: 6vh;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom:15px;
+	}
+
+	#whiteSmallBox {
+		background-color: #ffffff;
+		margin-left: 8vw;
+		margin-right: 8vw;
+		padding-top: 2vh;
+		padding-bottom: 2vh;
+		padding-right: 6vw;
+		padding-left: 6vw;
+	}
+
+	.littleNumbers {
+		font-size: 300%;
+	}
+
+/*-------------------------------------------------------------------------
+WHAT WE DO
+-------------------------------------------------------------------------*/
+
+	#what {
+		padding: 20px 3vw;
+	}
+
+	#services {
+		margin-top: 2vh;
+	}
+
+/*-------------------------------------------------------------------------
+OUR PRINCIPLES
+-------------------------------------------------------------------------*/
+
+	#ourPrinciples {
+		padding: 20px 3vw 30px;
+	}
+
+	.principleNum {
+		display: inline;
+		width: 20%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 6px;
+	}
+
+	.principle p {
+		display: inline-block;
+		margin-top: 5px;
+	}
+
+/*-------------------------------------------------------------------------
+OUR WORK
+-------------------------------------------------------------------------*/
+
+	#ourWork {
+		padding: 20px 3vw;
+	}
+
+/*-------------------------------------------------------------------------
+TALK TO US
+-------------------------------------------------------------------------*/
+
+	#talk {
+		padding-left: 4vw;
+		padding-right: 4vw;
+	}
+
+	.box {
+		width: 90vw;
+	}
+
+	.box input[type = "text"], .box textarea {
+		padding: 1.5vh 5vw;
+		width: 70vw;
+	}
+
+	.box input[type = "text"]:focus, .box textarea:focus {
+		width: 80vw;
+	}
+}
