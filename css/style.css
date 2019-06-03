@@ -112,16 +112,20 @@ aside {
 }
 
 .close {
-	height: 100px;
-	width: 100px;
+	font-size: 50px;
+	color: #ffffff;
+	opacity: 1;
   	position: fixed;
   	top: 40px;
   	left: 50px;
   	z-index: 1;
   	cursor: pointer;
 }
+
 .close:hover {
+	color: #2F2E2E;
 	opacity: 1;
+	transition: all .3s ease;
 }
 
 nav {
