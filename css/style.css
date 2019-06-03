@@ -144,6 +144,8 @@ a {
 	display: block;
 	text-decoration: none;
 	color: #ffffff;
+	font-size: 400%;
+	font-weight: 700;
 }
 
 nav ul li a:hover {
